@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Autor" content="Oscar Rivera">
+	<meta name="Description" content="Cambio de imagenes con metodos onmouse">
+	<meta name="Keywords" content="onmouseover, onmouseout">
+	<title>Imagenes Números</title>
+</head>
+
+<body>
+<span >
+<img src="uno.jpg" id="uno"  width="200" height="200" onmouseover="cambio1()" onmouseout="volver1()"><br>
+<img src="tres.jpg" id="tres" width="200" height="200" onmouseover="cambio2()" onmouseout="volver2()"><br>
+<img src="cinco.jpg" id="cinco" width="200" height="200" onmouseover="cambio3()" onmouseout="volver3()"><br>
+</span>
+</body>
+
+<script>
+//funciones para el cambio de imágenes mediante evento onmouseover()
+	
+function cambio1(){
+  document.getElementById("uno").src="tres.jpg";
+}
+function cambio2(){
+  document.getElementById("tres").src="cinco.jpg";
+}
+function cambio3(){
+  document.getElementById("cinco").src="uno.jpg";
+}
+
+//funciones para el cambio de imágenes mediante evento onmouseout()
+function volver1(){
+  document.getElementById("uno").src="uno.jpg";
+}
+function volver2(){
+  document.getElementById("tres").src="tres.jpg";
+}
+function volver3(){
+  document.getElementById("cinco").src="cinco.jpg";
+}
+
+</script>
+
+</html>
